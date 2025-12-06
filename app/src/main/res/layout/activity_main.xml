@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/timer_1_a10h"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="+10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/timer_1_d1s"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="-1"
+        app:layout_constraintStart_toEndOf="@+id/timer_1_d1m"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_d10s" />
+
+    <Button
+        android:id="@+id/timer_1_d10s"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="-10"
+        app:layout_constraintStart_toEndOf="@+id/timer_1_d10m"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_a1s" />
+
+    <Button
+        android:id="@+id/timer_3_a1s"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="+1"
+        app:layout_constraintStart_toEndOf="@+id/timer_3_a1m"
+        app:layout_constraintTop_toBottomOf="@+id/timer_3_a10s" />
+
+    <Button
+        android:id="@+id/timer_2_a10h"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="+10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_d1h" />
+
+    <Button
+        android:id="@+id/timer_2_d1m"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="-1"
+        app:layout_constraintStart_toEndOf="@+id/timer_2_d1h"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_d10m" />
+
+    <Button
+        android:id="@+id/timer_2_d10m"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="-10"
+        app:layout_constraintStart_toEndOf="@+id/timer_2_d10h"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_a1m" />
+
+    <Button
+        android:id="@+id/timer_3_d10s"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="-10"
+        app:layout_constraintStart_toEndOf="@+id/timer_3_d10m"
+        app:layout_constraintTop_toBottomOf="@+id/timer_3_a1s" />
+
+    <Button
+        android:id="@+id/timer_1_d1m"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="-1"
+        app:layout_constraintStart_toEndOf="@+id/timer_1_d1h"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_d10m" />
+
+    <Button
+        android:id="@+id/timer_3_reset"
+        android:layout_width="86dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="572dp"
+        android:text="Reset"
+        app:layout_constraintStart_toEndOf="@+id/timer_3_display"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_start" />
+
+    <Button
+        android:id="@+id/timer_3_a10s"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="+10"
+        app:layout_constraintStart_toEndOf="@+id/timer_3_a10m"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_d1s" />
+
+    <Button
+        android:id="@+id/timer_1_d1h"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="-1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_d10h" />
+
+    <Button
+        android:id="@+id/timer_1_a1m"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="+1"
+        app:layout_constraintStart_toEndOf="@+id/timer_1_a1h"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_a10m" />
+
+    <Button
+        android:id="@+id/timer_2_d1h"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="-1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_d10h" />
+
+    <Button
+        android:id="@+id/timer_1_a10s"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="+10"
+        app:layout_constraintStart_toEndOf="@+id/timer_1_a10m"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/timer_3_a1h"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="+1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_3_a10h" />
+
+    <Button
+        android:id="@+id/timer_1_d10h"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:text="-10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_a1h" />
+
+    <Button
+        android:id="@+id/timer_1_d10m"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="-10"
+        app:layout_constraintStart_toEndOf="@+id/timer_1_d10h"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_a1m" />
+
+    <Button
+        android:id="@+id/timer_3_d1h"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="-1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_3_d10h" />
+
+    <Button
+        android:id="@+id/timer_1_a1s"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="+1"
+        app:layout_constraintStart_toEndOf="@+id/timer_1_a1m"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_a10s" />
+
+    <Button
+        android:id="@+id/timer_2_d1s"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="-1"
+        app:layout_constraintStart_toEndOf="@+id/timer_2_d1m"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_d10s" />
+
+    <Button
+        android:id="@+id/timer_3_d10m"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="-10"
+        app:layout_constraintStart_toEndOf="@+id/timer_3_d10h"
+        app:layout_constraintTop_toBottomOf="@+id/timer_3_a1m" />
+
+    <Button
+        android:id="@+id/timer_1_a1h"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="+1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_a10h" />
+
+    <Button
+        android:id="@+id/timer_3_a1m"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="+1"
+        app:layout_constraintStart_toEndOf="@+id/timer_3_a1h"
+        app:layout_constraintTop_toBottomOf="@+id/timer_3_a10m" />
+
+    <TextView
+        android:id="@+id/timer_2_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="12dp"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:text="00:00:00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_a1m" />
+
+    <Button
+        android:id="@+id/timer_2_a1m"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="+1"
+        app:layout_constraintStart_toEndOf="@+id/timer_2_a1h"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_a10m" />
+
+    <Button
+        android:id="@+id/timer_2_a1h"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="+1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_a10h" />
+
+    <Button
+        android:id="@+id/timer_3_d10h"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:text="-10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_3_a1h" />
+
+    <Button
+        android:id="@+id/timer_2_d10h"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:text="-10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_a1h" />
+
+    <TextView
+        android:id="@+id/timer_1_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="12dp"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:text="00:00:00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_a1m" />
+
+    <Button
+        android:id="@+id/timer_3_a10m"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="+10"
+        app:layout_constraintStart_toEndOf="@+id/timer_3_a10h"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_d1m" />
+
+    <Button
+        android:id="@+id/timer_2_start"
+        android:layout_width="86dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="140dp"
+        android:text="Start"
+        app:layout_constraintStart_toEndOf="@+id/timer_2_display"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_reset" />
+
+    <Button
+        android:id="@+id/timer_3_d1s"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="-1"
+        app:layout_constraintStart_toEndOf="@+id/timer_3_d1m"
+        app:layout_constraintTop_toBottomOf="@+id/timer_3_d10s" />
+
+    <TextView
+        android:id="@+id/timer_3_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="12dp"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:text="00:00:00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_3_a1m" />
+
+    <Button
+        android:id="@+id/timer_3_d1m"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="-1"
+        app:layout_constraintStart_toEndOf="@+id/timer_3_d1h"
+        app:layout_constraintTop_toBottomOf="@+id/timer_3_d10m" />
+
+    <Button
+        android:id="@+id/timer_2_a10s"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="+10"
+        app:layout_constraintStart_toEndOf="@+id/timer_2_a10m"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_d1s" />
+
+    <Button
+        android:id="@+id/timer_2_d10s"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="-10"
+        app:layout_constraintStart_toEndOf="@+id/timer_2_d10m"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_a1s" />
+
+    <Button
+        android:id="@+id/timer_3_start"
+        android:layout_width="86dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="140dp"
+        android:text="Start"
+        app:layout_constraintStart_toEndOf="@+id/timer_3_display"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_reset" />
+
+    <Button
+        android:id="@+id/timer_2_a1s"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="+1"
+        app:layout_constraintStart_toEndOf="@+id/timer_2_a1m"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_a10s" />
+
+    <Button
+        android:id="@+id/timer_3_a10h"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="+10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_d1h" />
+
+    <Button
+        android:id="@+id/timer_2_reset"
+        android:layout_width="86dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="16dp"
+        android:text="Reset"
+        app:layout_constraintStart_toEndOf="@+id/timer_2_display"
+        app:layout_constraintTop_toBottomOf="@+id/timer_2_start" />
+
+    <Button
+        android:id="@+id/timer_1_start"
+        android:layout_width="86dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="100dp"
+        android:text="Start"
+        app:layout_constraintStart_toEndOf="@+id/timer_1_display"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/timer_1_reset"
+        android:layout_width="86dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="24dp"
+        android:text="Reset"
+        app:layout_constraintStart_toEndOf="@+id/timer_1_display"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_start" />
+
+    <Button
+        android:id="@+id/timer_2_a10m"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="+10"
+        app:layout_constraintStart_toEndOf="@+id/timer_2_a10h"
+        app:layout_constraintTop_toBottomOf="@+id/timer_1_d1m" />
+
+    <Button
+        android:id="@+id/timer_1_a10m"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="+10"
+        app:layout_constraintStart_toEndOf="@+id/timer_1_a10h"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="440dp"
+        android:layout_height="37dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="NekoTimer"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
